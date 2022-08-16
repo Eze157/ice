@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inconsolata:wght@300&family=Lobster&family=Permanent+Marker&display=swap');
+
+$fonts1: 'Dancing Script', cursive;
+$fonts2: 'Inconsolata', monospace;
+$fonts3: 'Lobster', cursive;
+$fonts4: 'Permanent Marker', cursive;
+
+$color1: rgba(110, 110, 110, 0.3);
+$color2: lightblue;
+$color3: springgreen;
+$color4: gray;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $color1;
+    margin: 15px;
+    padding: 10px;
+}
+
+header{
+    height: 250px;
+    background-image: url(/multimedia/Montaña.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    a{
+        color: white;
+    }
+
+    .navbar-toggler{
+        color: black;
+        border-color: black;
+    
+        .navbar-toggler-icon{
+            background-image: url(/multimedia/menu.png);
+        }
+    }
+    
+    .btn-outline-success{
+        color: white;
+        border-color: white;
+    }
+
+    .log{
+        height: 180px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+    .icono{
+        height: 200px;
+        width: 20%;
+        background-image: url(../multimedia/Jóvenes2.png);
+        background-size: cover;
+        background-position: top;
+    }
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+    margin: 50px;
+    text-transform: capitalize;
+}
+.encabezado{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+    margin: 50px;
+    text-transform: capitalize;
+}
+main{
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+
+    img{
+        padding: 5px;
+    }
+
+    img:hover{
+        transform: scale(0.9);
+        transition: all 0.8s;
+    }
+    p{
+        margin: 20px;
+        font-size: 17px;
+        font-family: 'Inconsolata', monospace;
+        text-align: center;
+    }
+
+    .galeria{
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 24%);
+        grid-template-rows: repeat(7, 250px);
+        grid-template-areas: 
+            "img1 img1 img2 img2"
+            "img1 img1 img3 img3"
+            "img4 img5 img3 img3"
+            "img6 img6 img7 img8"
+            "img9 img9 img7 img8"
+            "img10 img11 img11 img12"
+            "img10 img11 img11 img12";
+        grid-gap: 5px 5px;
+
+        .img{
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .img:hover{
+            transform: scale(0.9);
+            transition: all 0.8s;
+        }
+        .img1{
+            grid-area: img1;
+            background-image: url(../multimedia/Iglesia.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .img2{
+            grid-area: img2;
+            background-image: url(../multimedia/Mar.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .img3{
+            grid-area: img3;
+            background-image: url(../multimedia/Oveja.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .img4{
+            grid-area: img4;
+            background-image: url(../multimedia/Calvario.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .img5{
+            grid-area: img5;
+            background-image: url(../multimedia/Cruz.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .img6{
+            grid-area: img6;
+            background-image: url(../multimedia/Siervo.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .img7{
+            grid-area: img7;
+            background-image: url(../multimedia/Mar.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .img8{
+            grid-area: img8;
+            background-image: url(../multimedia/Faro.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .img9{
+            grid-area: img9;
+            background-image: url(../multimedia/Energia.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .img10{
+            grid-area: img10;
+            background-image: url(../multimedia/Oveja.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .img11{
+            grid-area: img11;
+            background-image: url(../multimedia/Iglesia.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .img12{
+            grid-area: img12;
+            background-image: url(../multimedia/Cruz.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}
+.nos{
+    text-align: center;
+    padding: 20px;
+}
+.nosotros{
+    height: auto;
+
+    h3{
+        text-align: center;
+        font-family: 'Inconsolata', monospace;
+    }
+
+    .nright{
+        height: 400px;
+        background-image: url(/multimedia/Iglesia.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+.form-control{
+    width: 40%;
+}
+footer{
+    height: 200px;
+    width: 100%;
+    background-image: url(/multimedia/Montaña.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    .footer{
+        height: 180px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
+    }
+    .icono2{
+        height: 90px;
+        width:20%;
+        background-image: url(../multimedia/Jóvenes2.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .redes{
+        height: auto;
+        width:20%;
+
+        i{
+            color: black;
+            font-size: 22px;
+            letter-spacing: 5px;
+            text-align: center;
+            padding: 10px;
+        }
+    }
+    .copyright{
+        height: auto;
+        width: auto;
+        background-color: gray;
+        background-attachment: fixed;
+        background-position: bottom;
+        border-radius: 15px;
+
+        p{
+            color: white;
+            font-family: 'Inconsolata', monospace;
+            font-weight: bold;
+            text-align: center;
+            text-transform: capitalize;
+            text-shadow: 3px 3px 8px black;
+        }
+    }
+}
+
+$contenedores: (
+    img1: black,
+    img2: yellow,
+    img3: gray,
+    img4: blue,
+    img5: green,
+    img6: brown,
+);
+
+@each $img, $color in $contenedores{
+    .contenedor--#{$img}{
+        height: 200px;
+        width: 400px;
+        background-color: lightblue;
+        color: $color;
+        border: 2px solid black;
+        text-align: center;
+        font-family: 'Inconsolata', monospace;
+        font-weight: bolder;
+        font-size: 25px;
+    }
+}
+
+.culto{
+    height: 150px;
+    width: 50%;
+    border: 2px solid black;
+    background-color: lightblue;
+    color: blue;
+}
+.culto--nuevo{
+    @extend .culto;
+    text-shadow: 2px 2px 5px black;
+    text-transform: capitalize;
+}
+@mixin sizes($width, $height, $bcolor) {
+    width: $width;
+    height: $height;
+    color: $bcolor;
+}
+.box1{
+    @include sizes(30%, 100px, blue);
+    background-color: springgreen;
+    border: 2px solid black;
+}
+.box2{
+    @include sizes(40%, 120px, orange);
+    background-color: gray;
+    border: 2px solid white;
+}
+.box3{
+    @include sizes(50%, 150px, red);
+    background-color: white;
+    border: 2px solid black;
+}
+@media (max-width:991px){
+    header{
+        height: 400px;
+    }
+    .icono{
+        display: none;
+    }
+
+    h1{
+        margin-top: 20px;
+    }
+
+    .inicio{
+        margin-top: auto;
+    }
+}
+@media (max-width:575px){
+    .inicio{
+        margin-top: 100px;
+    }
+}
