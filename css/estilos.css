@@ -14,7 +14,7 @@ body {
 
 header {
   height: 250px;
-  background-image: url(/multimedia/Montaña.jpg);
+  background-image: url(../multimedia/Montaña.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -27,7 +27,7 @@ header .navbar-toggler {
   border-color: black;
 }
 header .navbar-toggler .navbar-toggler-icon {
-  background-image: url(/multimedia/menu.png);
+  background-image: url(../multimedia/menu.png);
 }
 header .btn-outline-success {
   color: white;
@@ -72,6 +72,12 @@ main {
   margin-bottom: 50px;
   padding: 10px;
 }
+main .texto {
+  margin: 20px;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 80px;
+}
 main img {
   padding: 5px;
 }
@@ -86,93 +92,79 @@ main p {
   text-align: center;
 }
 main .galeria {
-  height: auto;
-  display: grid;
-  grid-template-columns: repeat(4, 24%);
-  grid-template-rows: repeat(7, 250px);
-  grid-template-areas: "img1 img1 img2 img2" "img1 img1 img3 img3" "img4 img5 img3 img3" "img6 img6 img7 img8" "img9 img9 img7 img8" "img10 img11 img11 img12" "img10 img11 img11 img12";
-  grid-gap: 5px 5px;
+  height: 100%;
+  width: auto;
 }
-main .galeria .img {
+main .img {
+  height: 350px;
   border: 2px solid black;
+  margin: 20px;
   border-radius: 5px;
-  margin: 10px;
+  box-shadow: 5px 5px 10px black;
 }
-main .galeria .img:hover {
-  transform: scale(0.9);
-  transition: all 0.8s;
-}
-main .galeria .img1 {
-  grid-area: img1;
+main .img1 {
   background-image: url(../multimedia/Iglesia.jpg);
   background-position: center;
   background-size: cover;
 }
-main .galeria .img2 {
-  grid-area: img2;
+main .img2 {
   background-image: url(../multimedia/Mar.jpg);
   background-position: center;
   background-size: cover;
 }
-main .galeria .img3 {
-  grid-area: img3;
+main .img3 {
   background-image: url(../multimedia/Oveja.jpg);
   background-position: center;
   background-size: cover;
 }
-main .galeria .img4 {
-  grid-area: img4;
+main .img4 {
   background-image: url(../multimedia/Calvario.jpg);
   background-position: center;
   background-size: cover;
 }
-main .galeria .img5 {
-  grid-area: img5;
+main .img5 {
   background-image: url(../multimedia/Cruz.jpg);
   background-position: center;
   background-size: cover;
 }
-main .galeria .img6 {
-  grid-area: img6;
+main .img6 {
   background-image: url(../multimedia/Siervo.jpg);
   background-position: center;
   background-size: cover;
 }
-main .galeria .img7 {
-  grid-area: img7;
+main .img7 {
   background-image: url(../multimedia/Mar.jpg);
   background-position: center;
   background-size: cover;
 }
-main .galeria .img8 {
-  grid-area: img8;
+main .img8 {
   background-image: url(../multimedia/Faro.jpg);
   background-position: center;
   background-size: cover;
 }
-main .galeria .img9 {
-  grid-area: img9;
+main .img9 {
   background-image: url(../multimedia/Energia.jpg);
   background-position: center;
   background-size: cover;
 }
-main .galeria .img10 {
-  grid-area: img10;
+main .img10 {
   background-image: url(../multimedia/Oveja.jpg);
   background-position: center;
   background-size: cover;
 }
-main .galeria .img11 {
-  grid-area: img11;
+main .img11 {
   background-image: url(../multimedia/Iglesia.jpg);
   background-position: center;
   background-size: cover;
 }
-main .galeria .img12 {
-  grid-area: img12;
+main .img12 {
   background-image: url(../multimedia/Cruz.jpg);
   background-position: center;
   background-size: cover;
+}
+main .img:hover {
+  transform: scale(0.9);
+  transition: all 0.8s;
 }
 
 .nos {
@@ -189,19 +181,19 @@ main .galeria .img12 {
 }
 .nosotros .nright {
   height: 400px;
-  background-image: url(/multimedia/Iglesia.jpg);
+  background-image: url(../multimedia/Iglesia.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .form-control {
-  width: 40%;
+  width: 50%;
 }
 
 footer {
   height: 200px;
   width: 100%;
-  background-image: url(/multimedia/Montaña.jpg);
+  background-image: url(../multimedia/Montaña.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -370,10 +362,22 @@ footer .copyright p {
   .inicio {
     margin-top: auto;
   }
+  .form-control {
+    width: 65%;
+  }
 }
 @media (max-width: 575px) {
   .inicio {
     margin-top: 100px;
+  }
+  .form-control {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
