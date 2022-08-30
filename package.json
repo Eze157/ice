@@ -1,7 +1,6 @@
 {
   "name": "ice",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,5 +16,6 @@
   "bugs": {
     "url": "https://github.com/Eze157/ice/issues"
   },
-  "homepage": "https://github.com/Eze157/ice#readme"
+  "homepage": "https://github.com/Eze157/ice#readme",
+  "description": ""
 }

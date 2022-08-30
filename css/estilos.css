@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  height: 250px;
+  height: 270px;
   background-image: url(../multimedia/Montaña.jpg);
   background-position: center;
   background-size: cover;
@@ -51,19 +51,83 @@ header .icono {
 h1 {
   text-align: center;
   font-size: 30px;
-  font-family: "Inconsolata", monospace;
+  font-family: "Inconsolata", monospace "Inconsolata", monospace;
   font-weight: bold;
   margin: 50px;
-  text-transform: capitalize;
 }
 
-.encabezado {
+.Bienvenida {
+  height: 200px;
+  width: auto;
+  margin: 10px;
+}
+.Bienvenida h3 {
   text-align: center;
-  font-size: 20px;
+  font-size: 26px;
   font-family: "Inconsolata", monospace;
   font-weight: bold;
-  margin: 50px;
-  text-transform: capitalize;
+}
+.Bienvenida p {
+  padding: 20px;
+  text-align: justify;
+  font-size: 18px;
+  font-family: "Inconsolata", monospace;
+}
+
+.conocenos {
+  background-color: rgba(110, 110, 110, 0.3);
+  border: 1px solid blue;
+  border-radius: 5px;
+  width: 90px;
+  text-align: center;
+  box-shadow: 2px 2px 5px black;
+}
+.conocenos a {
+  text-decoration: none;
+  color: blue;
+  font-family: "Inconsolata", monospace;
+}
+
+.conocenos:hover {
+  cursor: pointer;
+  background-color: blue;
+}
+.conocenos:hover a {
+  color: white;
+}
+
+.carousel-item img {
+  height: 570px;
+  width: 75%;
+}
+
+.carousel-caption {
+  color: white;
+}
+.carousel-caption h5 {
+  font-size: 26px;
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+}
+.carousel-caption p {
+  font-size: 18px;
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+}
+
+.cena p {
+  font-size: 18px;
+  font-family: "Inconsolata", monospace;
+  text-align: center;
+}
+.cena div {
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+  text-align: center;
+  font-size: 26px;
+}
+.cena iframe {
+  padding: 10px;
 }
 
 main {
@@ -172,18 +236,134 @@ main .img:hover {
   padding: 20px;
 }
 
+.encabezado {
+  text-align: center;
+  font-size: 26px;
+  margin: 25px;
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+}
+
+.quienes {
+  height: auto;
+  text-align: center;
+  font-size: 26px;
+  padding: 10px;
+  font-family: "Inconsolata", monospace;
+}
+.quienes h3 {
+  font-weight: bold;
+}
+
 .nosotros {
   height: auto;
+  width: auto;
+  text-align: center;
+  margin: 15px;
 }
-.nosotros h3 {
+.nosotros .texto1 p {
+  padding: 15px;
   text-align: center;
   font-family: "Inconsolata", monospace;
 }
-.nosotros .nright {
-  height: 400px;
+.nosotros .texto1 h3 {
+  margin: 10px;
+  text-align: center;
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+}
+.nosotros .texto1 .fe {
+  text-align: center;
+  margin: 15px;
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+}
+.nosotros .texto2 p {
+  padding: 15px;
+  text-align: center;
+  font-family: "Inconsolata", monospace;
+}
+.nosotros .imagen1 {
+  height: auto;
+  background-image: url(../multimedia/Cruz.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.nosotros .imagen2 {
+  height: auto;
   background-image: url(../multimedia/Iglesia.jpg);
   background-size: cover;
   background-position: center;
+}
+.nosotros .imagen3 {
+  background-image: url(../multimedia/Biblia.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.nosotros .imagen4 {
+  background-image: url(../multimedia/Espiritu.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.nosotros .imagen5 {
+  background-image: url(../multimedia/Creyente.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.especial p {
+  text-align: center;
+  font-family: "Inconsolata", monospace;
+  font-size: 18px;
+}
+.especial .juntos {
+  height: auto;
+  width: auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.especial .act1 {
+  height: 300px;
+  width: 50%;
+  background-image: url(../multimedia/Deporte.jpg);
+  background-size: cover;
+  float: left;
+}
+.especial .act2 {
+  height: 300px;
+  width: 50%;
+  background-image: url(../multimedia/Medico.jpg);
+  background-size: cover;
+  float: right;
+}
+.especial .act3 {
+  height: 300px;
+  width: 50%;
+  background-image: url(../multimedia/Carcel.jpg);
+  background-size: cover;
+  float: right;
+}
+.especial .act4 {
+  height: 300px;
+  width: 50%;
+  background-image: url(../multimedia/Niños.jpg);
+  background-size: cover;
+  float: left;
+}
+.especial .conferencia {
+  height: auto;
+  width: auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.especial .aniversario {
+  height: auto;
+  width: auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .form-control {
@@ -236,117 +416,7 @@ footer .copyright p {
   font-family: "Inconsolata", monospace;
   font-weight: bold;
   text-align: center;
-  text-transform: capitalize;
   text-shadow: 3px 3px 8px black;
-}
-
-.contenedor--img1 {
-  height: 200px;
-  width: 400px;
-  background-color: lightblue;
-  color: black;
-  border: 2px solid black;
-  text-align: center;
-  font-family: "Inconsolata", monospace;
-  font-weight: bolder;
-  font-size: 25px;
-}
-
-.contenedor--img2 {
-  height: 200px;
-  width: 400px;
-  background-color: lightblue;
-  color: yellow;
-  border: 2px solid black;
-  text-align: center;
-  font-family: "Inconsolata", monospace;
-  font-weight: bolder;
-  font-size: 25px;
-}
-
-.contenedor--img3 {
-  height: 200px;
-  width: 400px;
-  background-color: lightblue;
-  color: gray;
-  border: 2px solid black;
-  text-align: center;
-  font-family: "Inconsolata", monospace;
-  font-weight: bolder;
-  font-size: 25px;
-}
-
-.contenedor--img4 {
-  height: 200px;
-  width: 400px;
-  background-color: lightblue;
-  color: blue;
-  border: 2px solid black;
-  text-align: center;
-  font-family: "Inconsolata", monospace;
-  font-weight: bolder;
-  font-size: 25px;
-}
-
-.contenedor--img5 {
-  height: 200px;
-  width: 400px;
-  background-color: lightblue;
-  color: green;
-  border: 2px solid black;
-  text-align: center;
-  font-family: "Inconsolata", monospace;
-  font-weight: bolder;
-  font-size: 25px;
-}
-
-.contenedor--img6 {
-  height: 200px;
-  width: 400px;
-  background-color: lightblue;
-  color: brown;
-  border: 2px solid black;
-  text-align: center;
-  font-family: "Inconsolata", monospace;
-  font-weight: bolder;
-  font-size: 25px;
-}
-
-.culto, .culto--nuevo {
-  height: 150px;
-  width: 50%;
-  border: 2px solid black;
-  background-color: lightblue;
-  color: blue;
-}
-
-.culto--nuevo {
-  text-shadow: 2px 2px 5px black;
-  text-transform: capitalize;
-}
-
-.box1 {
-  width: 30%;
-  height: 100px;
-  color: blue;
-  background-color: springgreen;
-  border: 2px solid black;
-}
-
-.box2 {
-  width: 40%;
-  height: 120px;
-  color: orange;
-  background-color: gray;
-  border: 2px solid white;
-}
-
-.box3 {
-  width: 50%;
-  height: 150px;
-  color: red;
-  background-color: white;
-  border: 2px solid black;
 }
 
 @media (max-width: 991px) {
@@ -356,8 +426,34 @@ footer .copyright p {
   .icono {
     display: none;
   }
+  .Bienvenida {
+    height: auto;
+    width: auto;
+    margin: 10px;
+  }
+  .quienes {
+    height: auto;
+  }
+  .texto1 {
+    height: auto;
+  }
+  .texto2 {
+    height: auto;
+  }
+  .carousel-item img {
+    height: auto;
+    width: 80%;
+  }
   h1 {
     margin-top: 20px;
+  }
+  .cena {
+    height: auto;
+    width: auto;
+  }
+  iframe {
+    height: 300px;
+    width: 100%;
   }
   .inicio {
     margin-top: auto;
@@ -369,6 +465,13 @@ footer .copyright p {
 @media (max-width: 575px) {
   .inicio {
     margin-top: 100px;
+  }
+  .carousel-item img {
+    height: 250px;
+    width: 80%;
+  }
+  iframe {
+    height: 200px;
   }
   .form-control {
     width: 100%;
